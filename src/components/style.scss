@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  // font-family: "Oswald", sans-serif;
+  font-family: "Outfit", sans-serif;
   scrollbar-width: none;
 }
 
@@ -44,17 +44,6 @@ body {
   //  margin-left: -0%;
 }
 
-#horizontal .content-section:nth-child(1) {
-  /* background: #e3fc6c; */
-}
-
-#horizontal .content-section:nth-child(2) {
-  // background: #fff;
-}
-
-#horizontal .content-section:nth-child(3) {
-  // background: #8356ec;
-}
 
 #horizontal .content-section:nth-child(4) {
   background: #724acf;
@@ -71,7 +60,7 @@ body {
 }
 
 .hozRight span {
-  font-size: 7rem;
+  font-size: 14rem;
   opacity: 0.2;
 }
 
@@ -131,18 +120,16 @@ body {
 
 code {
   color: #fff !important;
-  /* margin-bottom: -10px !important; */
   font-size: 20px;
   font-family: monospace;
 }
 
-span {
-  display: inline-block;
-  margin-right: 100px;
-  padding: 0;
-  font-size: 10rem;
+.info{
+  margin-top: 30px;
 }
-
+.text-white{
+  margin-bottom: 10px;
+}
 large {
   font-size: 140%;
   font-weight: bold;
@@ -183,13 +170,45 @@ large {
 
 .user-name {
   color: #ffffff !important;
-  font-size: 100px;
+  font-size: clamp(3rem, 10vw, 100px);
   font-family: "Lato", system-ui;
   font-weight: 400;
   font-style: normal;
   text-align: center;
   margin: 0 auto;
-  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .hozRight span, .hozLeft span {
+    font-size: 3rem !important;
+    margin-right: 30px;
+  }
+  
+  .hozRight, .hozLeft {
+    animation-duration: 30s;
+    top: 50%;
+  }
+  
+  #section01 h2 {
+    font-size: clamp(2rem, 8vw, 70px);
+    width: 90%;
+    padding-left: 0;
+  }
+  
+  .user-info {
+    top: 10%;
+    padding: 0 20px;
+  }
+  
+  .img-user {
+    width: 150px;
+  }
+  
+  #horizontal .content-section {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: auto;
+  }
 }
 
 .text-uppercase {
@@ -320,28 +339,37 @@ h1 span {
 /* ////////////////////////////////////////////// */
 #section01 {
   position: relative;
-
+  // background: #fff;
+  background: url("/src/assets/BG.svg") center center no-repeat;
+  background-size: contain;
   .title {
     font-family: "Lato", system-ui;
     font-weight: 400;
     font-style: normal;
     padding-left: 30px;
+    padding-left: 5%;
+
     margin-top: 30px;
 
     h4 {
-      padding-top: 20px;
+      // padding-top: 20px;
+      font-weight: 300;
     }
   }
 
-
+ .des-content{
+  p{
+    font-weight:bold;
+  }
+ }
   &.content-section {
-    &:after {
+    &:before {
       content: "";
-      background:#804bd1 url("http://www.gentleface.com/i/free_toolbar_icons_16x16_black.png") no-repeat -30px -50px fixed;
+      // background:#ededf9;
       height: 100%;
-      width: 30%;
+      width: 100%;
       position: absolute;
-      right: 0;
+      left: 0;
       z-index: 1;
     }
   }
@@ -354,25 +382,25 @@ h1 span {
   .flex {
     display: flex;
     justify-content: left;
-    margin-left: 10%;
+    margin-left: 30%;
   }
 
   .box-content {
     // position: absolute;
-    // left: 15%;
+    padding-top: 3%;
   }
 
   h2 {
-    font-size: 70px;
-    width: 60%;
-    padding-left: 5%;
+    font-size: 6rem;
+    // width: 60%;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #63488b;
+    line-height: 1;
+    color: #724acf;
 
     span {
-      color: #a1a1aa !important;
+      color: #212529 !important;
       font-size: 40px;
       margin-right: 0;
       font-weight: 500;
@@ -386,8 +414,8 @@ h1 span {
 
   .box {
     margin: 30px;
-    width: 250px;
-    height: 250px;
+    width: 18rem;
+    height: 18rem;
     padding: 50px;
     border-radius: 50%;
     text-align: center;
@@ -399,7 +427,7 @@ h1 span {
 
   .box01 {
     color: #111111;
-    background-color: #a178df;
+    background-color: #5325d9;
   }
 
   .box02 {
@@ -413,25 +441,48 @@ h1 span {
 
   .box03 {
     color: #111111;
-    background-color: #f7e045;
+    background-color: #f261d6;
   }
 
   .box04 {
-    background-image: linear-gradient(0deg,
-        rgba(42, 41, 51, 0.8),
-        rgba(42, 41, 51, 0.8)),
-      url("../assets/section03/04.jpg");
+    background-color: #9065f3;
     background-position: 100% 100%;
     background-size: cover;
   }
+ 
 }
-
+.height50{
+  height: 50%;
+}
+.height40{
+  height: 40%;
+}
+.height60{
+  height:60%;
+}
+.width50{
+  width:50%;
+  height: 100%;
+}
 /* ////////////////////////////////////////////// */
 
 #section02 {
+color:#ffff;
+.bg-purple{
+  background: #724acf;
+}
+.bg-yellow{
+  background: #d0e710;
+}
+.bg-light-blue{
+  background: #c9d9de;
+}
+.cl-green{
+  color:#d1e811;
+}
   .img01 {
-    min-height: 100vw;
-    background-image: url(/src/assets/gggg.jpg);
+    // min-height: 100vw;
+    // background-image: url(/src/assets/gggg.jpg);
     background-position: 50% 50%;
     background-size: cover;
 
@@ -439,29 +490,50 @@ h1 span {
 
   .img02 {
     min-height: 368px;
-    background-image: url(/src/assets/mock02.jpg);
+    // background-image: url(/src/assets/mock02.jpg);
     background-position: 50% 50%;
     background-size: cover;
   }
 
   .img03 {
     min-height: 368px;
-    background-image: url(/src/assets/mock03.jpg);
+    // background-image: url(/src/assets/mock03.jpg);
     background-position: 50% 50%;
     background-size: cover;
   }
 
   .des-content {
-    align-items: center;
-    text-align: center;
-    margin-top: 50%;
-
+  position: absolute;
+    left:5%;
+    bottom:10%;
     h2 {
-      font-size: 60px;
+      font-size: 100px;
     }
   }
 }
-
+.relative{
+  position: relative;
+}
 #section03 {
   background: #724acf;
+
+  .content{
+    text-align: center;
+    display: inline-block;
+    color:#fff;
+    padding:30% 10%;
+    .typed-out{
+      font-size: 25px;
+      font-weight: 200;
+    }
+    h1{
+        font-family: "Dancing Script", cursive;
+        font-weight: Bold;
+        font-style: normal;
+        text-transform: lowercase;
+        font-size:8rem;
+    }
+    
+  }
+ 
 }
