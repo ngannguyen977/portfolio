@@ -8,9 +8,10 @@
         <div class="info">
           <h5 class="text-white font-weight-normal small-text">I'm</h5>
           <h1 class="user-name text-uppercase">NGAN NGUYEN</h1>
-          <code>UI/UX Design - Frontend Developer</code>ƒ
+          <code>UI/UX Design - Frontend Developer</code><br><br>
+          <span>Please scroll to the next page </span><span><img class="right-arrow" src="../assets/right-arrow.png" /></span>
         </div>
-
+        
       </div>
       <div class="scroll">
         <div class="m-scroll hozRight1">
@@ -93,13 +94,13 @@
           </div>
           <div class="flex">
             <div class="box-content">
-              <div class="row">
+              <div class="ds-flex">
                 <div class="col-4 box box01">
                   <h3 class="bl">Figma</h3>
                   <img src="../assets/section03/figma.svg" />
                 </div>
-                <div class="col-4 box box02">
-                  <h3 class="white">Adobe</h3>
+                <div class="col-4 box box02 white">
+                  <h3 class="">Adobe</h3>
                   <img src="../assets/section03/adobe.svg" />
                 </div>
                 <div class="col-4 box box03">
@@ -107,18 +108,18 @@
                   <img src="../assets/section03/vuejs.svg" />
                 </div>
               </div>
-              <div class="row">
-                <div class="col-4 box box03">
-                  <h3 class="bl">Figma</h3>
-                  <img src="../assets/section03/figma.svg" />
-                </div>
+              <div class="ds-flex">
                 <div class="col-4 box box02">
-                  <h3 class="white">Adobe</h3>
-                  <img src="../assets/section03/adobe.svg" />
+                  <h3 class="bl white">HTML</h3>
+                  <img src="../assets/section03/html.svg" />
                 </div>
                 <div class="col-4 box box01">
-                  <h3 class="bl">Vuejs</h3>
-                  <img src="../assets/section03/vuejs.svg" />
+                  <h3 class="">Boostrap</h3>
+                  <img src="../assets/section03/b.svg" />
+                </div>
+                <div class="col-4 box box02">
+                  <h3 class="bl white">CSS</h3>
+                  <img src="../assets/section03/css3.svg" />
                 </div>
               </div>
             </div>
@@ -130,29 +131,33 @@
     <section id="section02" class="content-section section">
       <div class="row">
 
-        <div class="col-6">
+        <div class="col-lg-6 col-xs-12 padding0">
           <div class="col-lg-12 bg-purple height60 relative">
             <div class="des-content">
               <h2 class="">
-                Let's see
+                <span class="sz45">Let's see</span>
                 <br />
-                <p>What did <span class="cl-green">I do?</span></p>
+                <p class="sz110">What did <span class="cl-green">I do?</span></p>
               </h2>
               <p class="">
-                Some projects i have done. Besides using adobe software i can also convert them to front end and work
-                with
-                coder
+                In addition to my design experience with Adobe and Figma design tools, I also have the ability to use frameworks and develop front-end."
               </p>
             </div>
           </div>
-        <div class="col-lg-12 bg-yellow height40"></div>
+        <div class="col-lg-12 bg-yellow height40 do01">
+
+        </div>
           
         </div>
-        <div class="col-lg-6">
-            <div class="col-lg-12 bg-yellow height50"></div>
-            <div class="col-lg-12 height50">
-                <div class="col-lg-6 bg-purple width50"></div>
-              <div class="col-lg-6 bg-yellow width50"></div>             
+        <div class="col-lg-6 padding0">
+         
+            <div class="col-lg-12 bg-yellow height50 do02">
+              <!-- <img src="../assets/do/logofood.jpg" alt="" class=""> -->
+            </div>
+            <div class="col-lg-12 height50 display-flex">
+               
+                <div class="col-lg-6 bg-purple width50 do03"></div>
+              <div class="col-lg-6 bg-yellow width50 do04"></div>             
             </div>        
         </div>
       </div>
@@ -162,12 +167,12 @@
         <!-- <h1>content 2</h1> -->
         <div class="content">
           <h1>Thank you !</h1>
-          <div class="typed-out">believe with my experience, sensitivity, enthusiasm and responsibility in work. I will
+          <div class="typed-out">I believe with my experience, sensitivity, enthusiasm and responsibility in work. I will
             do a good job and build a truly effective team.</div>
             <div class="contact">
-              <div>
-                <p>Phone:0981029889</p>
-                <p>Email: ngannguyen977@gmail.com</p>
+              <div class="display-flex">
+                <p><img src="../assets/phones.png" alt="" class="">Phone: <b>0981029889</b><span> </span></p>
+                <p> <img src="../assets/mail.png" alt="" class="">Email:<b> ngannguyen977@gmail.com</b><span></span></p>
               </div>
             </div>
         </div>
