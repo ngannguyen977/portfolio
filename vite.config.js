@@ -7,7 +7,10 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './', // uses relative paths
+  base: '/portfolio/',  // Must match your repo name
+  build: {
+    assetsDir: 'assets',  // Ensure assets go to the right folder
+  },
   plugins: [
     vue(),
     vueJsx(),
