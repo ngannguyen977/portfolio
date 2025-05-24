@@ -14,7 +14,74 @@
         </div>
       </div>
       <div class="scroll">
-        <!-- Your scroll content remains the same -->
+        <div class="m-scroll hozRight1">
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+          <span>
+            <large>VUE</large> FRAMEWORK
+          </span>
+          <span>
+            <large>HTML</large> FRONTEND
+          </span>
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+          <span>
+            <large>CSS</large> STYLE
+          </span>
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+        </div>
+        <div class="m-scroll hozRight">
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+          <span>
+            <large>VUE</large> FRAMEWORK
+          </span>
+          <span>
+            <large>HTML</large> FRONTEND
+          </span>
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+          <span>
+            <large>CSS</large> STYLE
+          </span>
+          <span>
+            <large>GRAPHIC</large> DESIGN
+          </span>
+        </div>
+        <!-- <div class="m-scroll hozLeft">
+          <span>
+            <b class="fill">UI / UX</b>
+            <small>DESIGN</small>
+          </span>
+          <span>
+            <b class="fill txt-pink">UI/UX</b>
+            <small>DESIGN</small>
+          </span>
+          <span>
+            <b class="fill">UI/UX</b>
+            <small>DESIGN</small>
+          </span>
+          <span>
+            <b class="fill txt-pink">UI/UX</b>
+            <small>DESIGN</small>
+          </span>
+          <span>
+            <b class="fill">UI/UX</b>
+            <small>DESIGN</small>
+          </span>
+        </div> -->
       </div>
     </div>
 
@@ -61,7 +128,40 @@
       </div>
     </section>
 
-    <!-- Other sections remain the same until contact section -->
+    <section id="section02" class="content-section section">
+      <div class="row">
+
+        <div class="col-lg-6 col-xs-12 padding0">
+          <div class="col-lg-12 bg-purple height60 relative">
+            <div class="des-content">
+              <h2 class="">
+                <span class="sz45">Let's see</span>
+                <br />
+                <p class="sz110">What did <span class="cl-green">I do?</span></p>
+              </h2>
+              <p class="">
+                In addition to my design experience with Adobe and Figma design tools, I also have the ability to use frameworks and develop front-end."
+              </p>
+            </div>
+          </div>
+        <div class="col-lg-12 bg-yellow height40 do01">
+
+        </div>
+          
+        </div>
+        <div class="col-lg-6 padding0">
+         
+            <div class="col-lg-12 bg-yellow height50 do02">
+              <!-- <img src="../assets/do/logofood.jpg" alt="" class=""> -->
+            </div>
+            <div class="col-lg-12 height50 display-flex">
+               
+                <div class="col-lg-6 bg-purple width50 do03"></div>
+              <div class="col-lg-6 bg-yellow width50 do04"></div>             
+            </div>        
+        </div>
+      </div>
+    </section>
 
     <section id="section03" class="content-section section">
       <div class="">
@@ -119,18 +219,21 @@ export default {
     const sections = gsap.utils.toArray("#horizontal .content-section");
     gsap.to(sections, {
       xPercent: -100 * (sections.length - 1),
+      //   ease: "none",
       scrollTrigger: {
         trigger: "#horizontal",
         pin: true,
         scrub: 1,
         snap: 1 / (sections - 1),
+        // base vertical scrolling on how wide the container is so it feels more natural.
         end: "+=3500",
+        // end: () => "+=" + (sections.offsetWidth - innerWidth),
+        //end: () => horizontalScrollContainer.scrollWidth
       },
     });
   },
 };
 </script>
 
-<style scoped lang="scss">
-/* Your existing styles remain the same */
-</style>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss"></style>
