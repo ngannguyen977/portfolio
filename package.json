@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "clean":"rm -rf dist docs",
-    "build": "vite build && cp -r dist docs",
+    "clean":"rm -rf dist/* docs/*",
+    "build": "npm run clean && vite build",
+    "prepublish": "cp -r dist/* docs",
+    "publish": "npm run build && npm run prepublish && git add -A && git commit -m 'chore: update materials' && git push origin master",
     "preview": "vite preview"
   },
   "dependencies": {
