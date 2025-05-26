@@ -149,9 +149,9 @@ p {
   margin-bottom: -10px;
 }
 
-code {
+.code {
   color: #fff !important;
-  font-size: 22px !important;
+  font-size: 22px;
   font-family: monospace;
 }
 
@@ -159,7 +159,7 @@ code {
   margin-top: 30px;
 }
 
-code {
+.code {
   font-size: 18px;
 }
 
@@ -237,7 +237,7 @@ large {
   }
 
   .img-user {
-    width: 150px;
+    width: 200px;
   }
 
   #horizontal .content-section {
@@ -668,6 +668,10 @@ h1 span {
     font-weight: 300;
   }
 
+  .user-info {
+    font-size: 70px;
+  }
+
   #section01 {
 
     .box {
@@ -746,4 +750,45 @@ h1 span {
       }
     }
   }
+}
+
+@media (min-width: 768px) {
+  .display {
+    display: none;
+  }
+}
+
+@media (max-width: 390px) {
+  .display_none {
+    display: none;
+  }
+
+  .user-name {
+    font-size: 45px;
+  }
+
+  .user-info {
+    top: 20%;
+  }
+
+  #section01 h2 {
+    font-size: 2rem;
+  }
+
+  .code {
+    font-size: 18px;
+  }
+
+  #section03 .content h1 {
+    font-size: 4.5rem;
+  }
+
+  #section01 .flex {
+    margin-left: 0;
+  }
+
+  #section01 h2 span {
+    font-size: 25px;
+  }
+
 }

@@ -8,7 +8,7 @@
         <div class="info">
           <h5 class="text-white font-weight-normal small-text">I'm</h5>
           <h1 class="user-name text-uppercase">NGAN NGUYEN</h1>
-          <code>UI/UX Design - Frontend Developer</code><br><br>
+          <div class="code">UI/UX Design - Frontend Developer</div><br><br>
           <span>Please scroll to the next page </span>
           <span><img class="right-arrow" :src="rightArrowImg" /></span>
         </div>
@@ -89,7 +89,8 @@
       <div class="">
         <div class="section-content">
           <div class="title">
-            <h2><span>I work with</span> <br> tools <br>& framworks</h2>
+            <h2 class="display_none"><span>I work with</span> <br> tools <br>& framworks</h2>
+            <h2 class="display"><span>I work with</span> tools & framworks</h2>
             <h4>Some design tools and frameworks I use in my projects.</h4>
           </div>
           <div class="flex">
