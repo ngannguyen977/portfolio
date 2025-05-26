@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -r dist docs && vite build && cp -r dist docs",
+    "clean":"rm -rf dist docs",
+    "build": "vite build && cp -r dist docs",
     "preview": "vite preview"
   },
   "dependencies": {
